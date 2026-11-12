@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account Settings - Safe Haven Medical Institute</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="sky">
+<header class="top">
+  <div class="brand"><div class="logo" aria-hidden="true">SH</div>Dr. Batumbakal</div>
+  <h1>Safe Haven Medical Institute</h1>
+  <nav>
+    <a href="#">About Us</a>
+    <a href="home.html">Home</a>
+    <a href="#">Rooms</a>
+    <button class="gear" id="gear" aria-label="Settings" aria-expanded="false">&#9881;</button>
+    <div class="menu" id="menu" hidden>
+      <a href="account.html">Account Settings</a>
+      <a href="login.html">Log Out</a>
+    </div>
+  </nav>
+</header>
+<main class="card">
+  <h2>Change your info</h2>
+  <div class="field">
+    <label for="email">Email</label>
+    <input class="pill" id="email" value="ex******23@gmail.com" readonly>
+  </div>
+  <div class="field">
+    <label for="phone">Mobile no.</label>
+    <div class="row">
+      <input class="pill" id="phone" inputmode="numeric" maxlength="11" readonly>
+      <button class="edit" id="editPhone" aria-label="Edit or save mobile number">&#9998;</button>
+    </div>
+  </div>
+  <div class="field">
+    <label for="pw">Password</label>
+    <input class="pill" id="pw" type="password" value="*************" readonly>
+    <a class="link" href="password.html">Change Password</a>
+  </div>
+  <p class="msg" id="msg" aria-live="polite"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
